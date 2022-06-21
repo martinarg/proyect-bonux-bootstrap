@@ -10,14 +10,25 @@ html {
 }
 
 .contenedor {
-    background-color: #fff;
+    background-image: url("../img/billetes1000.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.contenedorIndex {
+
+    background-color: white;
     font-family: 'Ubuntu', sans-serif;
 
 }
 
 /* header */
 .header {
-    background-color: #f8f9fa!important;
+    background-color: #f8f9fa !important;
     color: rgb(23, 138, 238);
     box-shadow: -1px 10px 5px 0px rgba(107, 106, 106, 0.75);
     -webkit-box-shadow: -1px 10px 5px 0px rgba(107, 106, 106, 0.75);
@@ -44,10 +55,17 @@ html {
     color: white;
 
 }
-.nav-item a{
+
+.nav-item a {
     text-decoration: none;
     color: rgb(23, 138, 238) !important;
-     
+
+}
+
+.nav-item a:hover {
+    text-decoration: none;
+    color: white !important;
+
 }
 
 .logoImg {
@@ -58,14 +76,16 @@ html {
 
 
 }
+
 @keyframes mostrarLogo {
-    0%{
+    0% {
         transform: rotatex(30deg);
     }
-    100%{
+
+    100% {
         transform: rotatex(70deg);
     }
-    
+
 }
 
 
@@ -97,7 +117,7 @@ html {
 
 }
 
-.btnSlider a{
+.btnSlider a {
     text-decoration: none;
 }
 
@@ -130,8 +150,8 @@ html {
     transform: translate(-50%, -50%);
     border: #fff solid 2px;
     border-radius: 15px;
-    
-    
+
+
 
 }
 
@@ -141,23 +161,24 @@ html {
     font-size: 49px;
     animation-duration: 2s;
     animation-name: crecerTexto;
-   
+
 }
 
 @keyframes crecerTexto {
-    0%{
+    0% {
         opacity: 0;
     }
-    75%{
+
+    75% {
         opacity: 0.5;
     }
-  
-  
-    100%{
-       opacity: 1;
+
+
+    100% {
+        opacity: 1;
     }
 
-    
+
 }
 
 
@@ -188,13 +209,14 @@ html {
 }
 
 @keyframes mostrar {
-    0%{
-       opacity: 0;
+    0% {
+        opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
-    
+
 }
 
 .textoPqe {
@@ -204,6 +226,7 @@ html {
     border: rgb(23, 138, 238) solid 3px;
     border-radius: 5px;
     padding: 15px;
+    background-color: white;
 
 }
 
@@ -277,6 +300,7 @@ html {
     border: #0899ba 3px solid;
     border-radius: 5px;
     margin-top: 2vw;
+    background-color: white;
 }
 
 .imagenprod {
@@ -295,6 +319,8 @@ html {
 .formulario {
     border: rgb(15, 163, 255) 5px solid;
     padding: 10px;
+    background-color: white;
+
 }
 
 
@@ -417,6 +443,11 @@ ul {
     color: white;
 }
 
+.btnFooter:hover {
+    text-decoration: none;
+    color: white;
+}
+
 .titfoot {
     font-size: 25px;
     margin-bottom: 5px;
@@ -450,39 +481,43 @@ ul {
 .divCopyRight {
     grid-area: divCopyRight;
 }
-.divMenuMobile{
+
+.divMenuMobile {
     display: none;
 }
 
 .menuMobile {
-   
+
     width: 100%;
     border-top: 6px solid whitesmoke;
 }
 
 
 
-.menuMobile li{
-   list-style: none;
+.menuMobile li {
+    list-style: none;
 }
 
-.secMobile, .btnSliderCerrar {
+.secMobile,
+.btnSliderCerrar {
 
     text-decoration: none;
     color: #0054fe;
     font-size: 9vw;
-   
+
 
 }
-.secMobile a, .btnSliderCerrar a{
+
+.secMobile a,
+.btnSliderCerrar a {
     text-align: center;
 }
 
-.footer-mobile li{
+.footer-mobile li {
     list-style: none;
 }
 
-.nav-item  .dropdown-item{
+.nav-item .dropdown-item {
     font-size: 2vw;
 }
 
@@ -493,23 +528,22 @@ ul {
         height: 156vw;
     }
 
-    
+
     .btnHeader {
-    text-decoration: none;
-    text-transform: capitalize;
-    color: rgb(23, 138, 238);
-    border: 0px
-   
+        text-decoration: none;
+        text-transform: capitalize;
+        color: rgb(23, 138, 238);
+        border: 0px
+    }
 
-    
-}
-.nav-item a{
-    font-size: 9vw;
-}
+    .nav-item a {
+        font-size: 9vw;
+    }
 
-.nav-item  .dropdown-item{
-    font-size: 5vw;
-}
+    .nav-item .dropdown-item {
+        font-size: 5vw;
+    }
+
     .btnSlider {
         display: block;
     }
@@ -582,7 +616,7 @@ ul {
     }
 
     .menuMobile {
-     
+
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -656,13 +690,14 @@ ul {
     .textoAlianza {
         display: none;
     }
-    .img-thumbnail{
+
+    .img-thumbnail {
         margin-top: 4vw;
     }
 
- 
 
-    
+
+
 
 
 
